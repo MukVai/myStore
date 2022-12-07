@@ -6,16 +6,16 @@ const HeroBanner = () => {
     <div className='hero-banner-container'>
       <div>
         <p className='beats-solo'>
-           Small Text
+           SMALL TEXT
         </p>
-        <h3>Mid Text </h3>
+        <h3>MID TEXT </h3>
         <img src="" alt="headphones" className='hero-banner-image' />
         <div>
           <Link href='/product/ID'>
-            <button type='button'>Button Text</button></Link>
+            <button type='button'>BUTTON TEXT</button></Link>
             <div className='desc'>
               <h5>Description</h5>
-              <p>Description of the Product</p>
+              <p>DESCRIPTION</p>
             </div> 
         </div>
       </div>
