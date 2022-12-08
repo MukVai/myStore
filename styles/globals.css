@@ -213,7 +213,7 @@ text-align: end;
 .footer-banner-container{
   padding: 100px 40px;
   background-color: #f02d34;
-  border-radius: 15px;
+  border-radius: 30px;
   position: relative;
   height: 400px;
   line-height: 1; 
@@ -241,6 +241,7 @@ text-align: end;
   font-size: 80px;
   margin-left: 25px;
 }
+
 .banner-desc .left p{
   margin:18px;
 }
@@ -249,7 +250,7 @@ text-align: end;
   /* top: -35%;
   left: 8%; */
   top: -25%;
-  left: 25%;
+  left: 45%;      /*modified*/
 }
 .banner-desc .right{
   line-height: 1.4;
@@ -633,8 +634,8 @@ margin-top: 160px;
     margin-top: 80px;
   }
   .footer-banner-image{
-    width: 77%;
-    left: 30%;
+    width: 45%;     /*modified*/
+    left: 60%;      /*modified*/
     top: 6%;
     height: 56%
   }
