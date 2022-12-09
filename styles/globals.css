@@ -167,7 +167,7 @@ width: 100%;
 .hero-banner-image{
   position: absolute;
   top: 0%;
-  right:35%;
+  right:30%;
   width: 450px;
   height: 450px;
 }
@@ -250,7 +250,9 @@ text-align: end;
   /* top: -35%;
   left: 8%; */
   top: -25%;
-  left: 45%;      /*modified*/
+  left: 42%;      /*modified*/
+  height: 445px;  /*modified*/
+  width: 445px;   /*modified*/
 }
 .banner-desc .right{
   line-height: 1.4;
@@ -624,8 +626,8 @@ margin-top: 160px;
     height: 560px;
   }
   .hero-banner-image{
-    width: 77%;
-    height: 62%;
+    width: 45%;
+    height: 56%;
     top: -2%;
     right: -6%;
   }
