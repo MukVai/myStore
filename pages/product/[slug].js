@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import { client, urlFor } from '../../lib/client'
 import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
 import { Product } from '../../components';
+import { useStateContext } from '../context/StateContext';
+
+
+// this one's for a particular product page 
+
 
 const ProductDetails = ({ product, products }) => {
     const { image, name, details, price } = product;
@@ -62,7 +67,7 @@ const ProductDetails = ({ product, products }) => {
                 <div className='marquee'>
                     <div className='maylike-products-container track'>
                         {products.map((item) => (
-                            <Product key={product._id} product={item} />
+                            <Product key={item._id} product={item} />
                         ))}
                     </div>
                 </div>
@@ -96,7 +101,7 @@ export const getStaticProps = async ({ params: { slug } }) => {
     const query = `*[_type == "product" && slug.current == '${slug}'][0 ]`;
     // [0] for first product that matches this query and * is for getEverything
     const productsQuery = '*[_type == "product"]'
-    // for all related products
+    // productsQuery for all related products
     const product = await client.fetch(query);
     const products = await client.fetch(productsQuery);
 
